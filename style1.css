@@ -1,0 +1,241 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+/* logo and image in navigation bar */
+#logo{
+    margin: 10px 23px;
+}
+#logo img{
+    height: 89px;
+    margin: 10px 23px;
+    width: 150px;
+}
+/* list items in navigation bar */
+#navbar{
+    position: absolute;
+    /* top: 0px; */
+    width: 1580px;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+}
+#navbar ul {
+    display: flex;
+    align-items: center;
+    font-family:'Kanit', sans-serif;
+}
+#navbar ul li {
+    font-size: 1.3rem;
+    list-style: none;
+}
+#navbar ul li a{
+padding: 3px 25px;
+text-decoration: none;
+display: block;
+color: white;
+border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+ /* Section for home */
+ #home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    flex-direction: column;
+    height: 712px;
+ }
+ #home::before{
+    content: " ";
+    background: url('sporst4.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+ }
+
+ .h-primary{
+    font-size: 3.6rem;
+    padding: 12px;
+ }
+ #home h1{
+    color: white;
+    text-align: center;
+    font-family:'Kanit', sans-serif;
+ }
+ #home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family:'Kanit', sans-serif;
+ }
+ .btn{
+    padding: 12px 28px;
+    border-radius: 20px;
+    background-color: red;
+    margin: 17px;
+    border: none;
+    font-family:'Kanit', sans-serif;;
+    font-size: 1.0rem;
+    font-display: bolder;
+    cursor: pointer;
+ }
+ .btn:hover{
+    background-color: wheat;
+ }
+
+/* services section */
+#heading{
+    text-align: center;
+}
+#services{
+    margin: 10px;
+    display: flex;
+}
+#services .box{
+    border: 3px solid rgb(20, 1, 65);
+    padding: 12px 16px;
+    margin: 8px;
+    background-color: rgb(165, 146, 146);
+    border-radius: 20px;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 120px;
+}
+#services .box p{
+    font-family:'Kanit', sans-serif;
+}
+
+/* CLients Sections */
+#client-section{
+  height: 344px;
+}
+.client-section::before{
+    content: " ";
+    position: absolute;
+    background: url('sports1.jpg') no-repeat center center/cover ;
+    width: 100%;
+    height: 34.5%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 120px;
+}
+.client-items{
+    padding: 10px 23px;
+    margin: 15px;
+}
+.h1-primary{
+    font-size: 3.6rem;
+    font-family:'Kanit', sans-serif;
+    color: rgb(255, 238, 0);
+}
+/* Contact section */
+.contact{
+    position: relative;
+    height: 100%;
+  color: rgb(12, 0, 0);
+}
+.contact::before{
+    content: " ";
+    position: absolute;
+    background: url('sports3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding: 6px 20px;
+    border: 2px solid rgb(169, 169, 233);
+    border-radius: 15px;
+    background-color: rgb(243, 215, 225);
+    font-family:'Kanit', sans-serif;
+
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contactbox form{
+    width: 30%;
+}
+#contactbox label{
+    font-size: 1.1rem;
+    font-family:'Kanit', sans-serif;
+}
+
+/* Footer section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+/* utility classes */
+.center{
+    text-align: center;
+}
+.h-primary{
+    padding: 12px;
+    font-size: 3.3rem;
+    font-family:'Kanit', sans-serif;
+}
+.h-secondary{
+    padding: 12px;
+    font-size: 1.8rem;
+    font-family:'Kanit', sans-serif;
+}
+.centre{
+    text-align: center;
+}
+.h-live{
+    font-family:'Kanit', sans-serif;
+    font-size: 3.6rem;
+    color: rgb(208, 255, 0);
+    padding-top: 50px;
+}
